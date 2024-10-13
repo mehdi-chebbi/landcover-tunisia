@@ -2,7 +2,7 @@
   <img src="assets/logo-h.png" class="logo" alt="Logo" /> <!-- Added a class for logo -->
   <ul class="uniqueNavList">
     <li class="uniqueNavItem"><a routerLink="/home" class="uniqueNavLink">Home</a></li>
-    <li class="uniqueNavItem"><a routerLink="/cagre-geomorphologie" class="uniqueNavLink">Cagre Geomorphologie</a></li>
+    <li class="uniqueNavItem"><a routerLink="/cagre-geomorphologie" class="uniqueNavLink">Cadre Geomorphologie</a></li>
     <li class="uniqueNavItem"><a routerLink="/decision-tree" class="uniqueNavLink">Decision Tree</a></li>
     <li class="uniqueNavItem"><a routerLink="/indices" class="uniqueNavLink">Indices</a></li>
     <li class="uniqueNavItem"><a routerLink="/random-forest" class="uniqueNavLink">Random Forest</a></li>
@@ -20,24 +20,23 @@
       <div style="display: flex; justify-content: flex-start; align-items: center; padding: 10px;">
         <div class="feature-item" style="margin-right: 150px; margin-top: 25px; text-align: center; padding: 10px;">
           <img src="assets/mountain.png" alt="10M Resolution Icon" style="width: 35px; height: 35px; margin-right: 8px; filter: brightness(0) invert(1);">
-          30M resolution
+          Résolution de 30 M
         </div>
         <div class="feature-item" style="margin-right: 150px; margin-top: 25px; text-align: center; padding: 10px;">
           <img src="assets/ia.png" alt="AI Powered Icon" style="width: 35px; height: 35px; margin-right: 8px; filter: brightness(0) invert(1);">
-          AI Powered
+          Alimenté par l'IA
         </div>
         <div class="feature-item" style="margin-right: 10px; margin-top: 25px; text-align: center; padding: 10px;">
           <img src="assets/time.png" alt="Near Realtime Icon" style="width: 35px; height: 35px; margin-right: 8px; filter: brightness(0) invert(1);">
-          Near Realtime
-        </div>
+          Données 2023-2024        </div>
       </div>
       <div class="button-container"style="margin-top: 60px">
         <button  (click)="scrollDowncarte()" class="explore-btn-name-explore">Visualizer les cartes</button>
         <!-- app.component.html -->
-        <button (click)="scrollDown()" class="explore-btn-name-discover">Explorer les classes</button>
+        <button (click)="scrollDown()" class="explore-btn-name-explore">Explorer les classes</button>
 
 
-        <button class="explore-btn-name-read">READ THE PAPER</button>
+
       </div>
 
     </div>
@@ -167,9 +166,9 @@
     <div class="cards-type-name-card">
       <img class="cards-type-name-card__img" src="assets/cagre.png" alt="Cagre Géomorphologie"/>
       <div class="cards-type-name-card__content">
-        <h1 class="cards-type-name-card__header">Cagre Géomorphologie</h1>
+        <h1 class="cards-type-name-card__header">Cadre Géomorphologie</h1>
         <div class="cards-type-name-card__text-wrapper">
-          <p class="cards-type-name-card__text">Plongez dans le monde fascinant des études de <strong>Cagre Géomorphologie</strong>.</p>
+          <p class="cards-type-name-card__text">Plongez dans le monde fascinant des études de <strong>Cadre Géomorphologie</strong>.</p>
         </div>
         <button  class="cards-type-name-card__btn" [routerLink]="['/cagre-geomorphologie']">Explorer <span>&rarr;</span></button>
       </div>

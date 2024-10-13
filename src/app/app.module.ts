@@ -9,6 +9,7 @@ import { DecisionTreeComponent } from './decision-tree/decision-tree.component';
 import { RandomForestComponent } from './random-forest/random-forest.component';
 import { CagreGeomorphologieComponent } from './cagre-geomorphologie/cagre-geomorphologie.component';
 import { IndicesComponent } from './indices/indices.component';
+import { OumaComponent } from './ouma/ouma.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { IndicesComponent } from './indices/indices.component';
     DecisionTreeComponent,
     RandomForestComponent,
     CagreGeomorphologieComponent,
-    IndicesComponent
+    IndicesComponent,
+    OumaComponent
   ],
   imports: [
     BrowserModule,
