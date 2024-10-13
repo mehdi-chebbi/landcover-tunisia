@@ -1,0 +1,90 @@
+#uniqueNavBar {
+  position: fixed; /* Make it fixed so it scrolls with the page */
+  top: 0; /* Position at the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 70px; /* Increased height for a thicker navbar */
+  background-color: rgb(11, 77, 126); /* White with transparency */
+  transition: background-color 0.3s ease; /* Smooth transition for background change */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Adjust padding to fit logo and items */
+}
+.logo {
+  height: 70px; /* Adjust height for the logo */
+  margin-right: auto; /* Push the logo to the left */
+}
+
+.uniqueNavList {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Flexbox for horizontal alignment */
+}
+
+.uniqueNavItem {
+  margin-left: 20px; /* Space between nav items */
+  position: relative; /* Position relative for the pseudo-element */
+}
+
+.uniqueNavLink {
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* Black text color */
+  font-weight: bold; /* Make text bold */
+  font-size: 18px; /* Increase font size to 18px (or your desired size) */
+  padding-bottom: 5px; /* Space between text and the line */
+}
+
+/* Line under the link */
+.uniqueNavLink::after {
+  content: ""; /* Empty content for pseudo-element */
+  display: block; /* Block level for height */
+  width: 100%; /* Full width of the link */
+  height: 2px; /* Height of the line */
+  background-color: #ffffff; /* Color of the line */
+  transform: scaleX(0); /* Initially scale down to 0 */
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+  position: absolute; /* Absolute positioning */
+  left: 0; /* Align to the left */
+  bottom: -20px; /* Adjust this value to move the line down */
+}
+
+/* Hover effect for the link */
+.uniqueNavLink:hover::after {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1 {
+  color: #0b4d7e;
+}
+section {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+h2 {
+  color: #333;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}

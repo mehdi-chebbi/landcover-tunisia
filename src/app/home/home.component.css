@@ -1,0 +1,289 @@
+.cursor {
+  display: inline-block;
+  /* Adjust width and appearance of the cursor */
+  width: 10px; /* Adjust to match the font size if needed */
+}
+
+.blink {
+  animation: smoothBlink 1s infinite;
+}
+
+@keyframes smoothBlink {
+  0% {
+    opacity: 1;  /* Cursor fully visible */
+  }
+  50% {
+    opacity: 0;  /* Cursor fully invisible (fades out) */
+  }
+  100% {
+    opacity: 1;  /* Cursor fades back in */
+  }
+}
+.features-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.feature-item {
+  font-size: 25px; /* Increased font size for better readability */
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-btn-name-explore {
+  background-color: #83B2D5; /* Blue background */
+  color: white;
+}
+
+#target {
+  height: 200px;
+  background-color: lightblue;
+}
+.explore-btn-name-explore:hover {
+  background-color: #46748c; /* Darker blue on hover */
+}
+
+.explore-btn-name-discover,
+.explore-btn-name-read {
+  background-color: transparent; /* Transparent background */
+  color: #ffffff; /* Blue text */
+  border: 2px solid #ffffff; /* Blue border */
+}
+
+.explore-btn-name-discover:hover,
+.explore-btn-name-read:hover {
+  background-color: #ffffff; /* Blue background on hover */
+  color: #83B2D5; /* White text on hover */
+}
+.scrolling-text {
+  position: relative;    /* Normal flow */
+  top: 300px;           /* Positioning down from the top */
+  left: 20px;           /* Slightly from the left */
+  font-family: Quicksand, Arial, sans-serif; /* Font family */
+  font-size: 80px;      /* Large font size */
+  font-weight: 300;     /* Light weight */
+  line-height: 1.2;     /* Line height */
+  color: #fff;          /* White color */
+  z-index: 10;          /* Ensure visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow */
+  margin: 0;            /* No margin */
+  display: block;       /* Block display */
+  box-sizing: border-box; /* Include padding in dimensions */}#uniqueNavBar {
+                                                                position: fixed; /* Make it fixed so it scrolls with the page */
+                                                                top: 0; /* Position at the top */
+                                                                left: 0; /* Align to the left */
+                                                                width: 100%; /* Full width */
+                                                                height: 70px; /* Increased height for a thicker navbar */
+                                                                background-color: rgba(255, 255, 255, 0.3); /* White with transparency */
+                                                                transition: background-color 0.3s ease; /* Smooth transition for background change */
+                                                                z-index: 1000; /* Ensure it stays on top of other content */
+                                                                display: flex; /* Use flexbox for alignment */
+                                                                align-items: center; /* Center items vertically */
+                                                                padding: 0 20px; /* Adjust padding for alignment */
+                                                              }
+
+.logo {
+  height: 70px; /* Adjust height for the logo */
+  margin-right: auto; /* Push the logo to the left */
+}
+
+.uniqueNavList {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Flexbox for horizontal alignment */
+  margin-left: auto; /* Push the list items to the right */
+}
+
+.uniqueNavItem {
+  margin-left: 20px; /* Space between nav items */
+  position: relative; /* Position relative for the pseudo-element */
+}
+
+.uniqueNavLink {
+  text-decoration: none; /* Remove underline */
+  color: #000000; /* Black text color */
+  font-weight: bold; /* Make text bold */
+  font-size: 18px; /* Increase font size to 18px (or your desired size) */
+  padding-bottom: 5px; /* Space between text and the line */
+}
+
+/* Line under the link */
+.uniqueNavLink::after {
+  content: ""; /* Empty content for pseudo-element */
+  display: block; /* Block level for height */
+  width: 100%; /* Full width of the link */
+  height: 2px; /* Height of the line */
+  background-color: #ffffff; /* Color of the line */
+  transform: scaleX(0); /* Initially scale down to 0 */
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+  position: absolute; /* Absolute positioning */
+  left: 0; /* Align to the left */
+  bottom: -20px; /* Adjust this value to move the line down */
+}
+
+/* Hover effect for the link */
+.uniqueNavLink:hover::after {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+
+/* Title Styling */
+.gallery-title {
+  position: absolute;  /* Position it absolutely within the gallery container */
+  top: 10px;          /* Adjust this value as needed for vertical positioning */
+  left: 20px;         /* Adjust this value for horizontal positioning */
+  font-size: 3em;     /* Increase the font size for better visibility */
+  color: white;       /* Change text color for contrast against the background */
+  z-index: 2;        /* Ensure the title appears above the gallery images */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: add a shadow for better visibility */
+  z-index: 66666;
+}
+
+/* Add this to prevent overlap if needed */
+#captioned-gallery {
+  position: relative; /* Ensure the title is positioned correctly within this container */
+}
+
+
+.bubble-container {
+  background-color: #000; /* Black background for the container */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px;
+}
+
+.bubble-land-use {
+  display: flex;
+  justify-content: space-around; /* Equal spacing between bubbles */
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.bubble-land-type {
+  display: flex;
+  flex-direction: column; /* Stack the bubble and label */
+  align-items: center;
+  margin: 0 10px; /* Keep horizontal spacing consistent */
+}
+
+.bubble-color-circle {
+  width: 70px; /* Increased bubble size */
+  height: 70px; /* Increased bubble size */
+  border-radius: 50%;
+  margin-bottom: 5px; /* Space between bubble and label */
+}
+
+.bubble-label {
+  font-size: 16px; /* Adjusted font size */
+  text-align: center; /* Center text */
+  max-width: 80px; /* Limit text width to avoid overflow */
+}
+
+
+.cards-type-name-grid {
+  display: grid;
+  width: 100%; /* Use full width of the parent container */
+  max-width: 80rem; /* Set a max width for the grid */
+  grid-gap: 2rem; /* Reduce the gap between cards */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Smaller min width for cards */
+}
+
+@media (max-width: 60em) {
+  .cards-type-name-grid {
+    grid-gap: 1.5rem; /* Further reduce gap on smaller screens */
+  }
+}
+
+.cards-type-name-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1); /* Reduce shadow */
+  cursor: pointer;
+  transition: 0.2s;
+  height: 100%; /* Allow cards to take up the height of their container */
+}
+
+.cards-type-name-card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+}
+
+.cards-type-name-card__img {
+  display: block;
+  width: 100%;
+  height: 12rem; /* Reduced height for images */
+  object-fit: cover;
+}
+
+.cards-type-name-card__content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-row-gap: 1.5rem; /* Reduced gap */
+  padding: 1.5rem; /* Reduced padding */
+  height: 100%;
+}
+
+.cards-type-name-card__header {
+  font-size: 2.5rem; /* Reduced font size */
+  font-weight: 500;
+  color: #0d0d0d;
+}
+
+.cards-type-name-card__text {
+  font-size: 1.2rem; /* Reduced font size */
+  letter-spacing: 0.1rem;
+  line-height: 1.5; /* Adjusted line height */
+  color: #3d3d3d;
+  margin-bottom: 1.5rem; /* Reduced margin */
+}
+
+.cards-type-name-card__btn {
+  display: block;
+  width: 100%;
+  padding: 1rem; /* Reduced padding */
+  font-size: 1.5rem; /* Reduced font size */
+  text-align: center;
+  color: #3363ff;
+  background-color: #e6ecff;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.cards-type-name-card__btn span {
+  margin-left: 0.5rem; /* Reduced margin */
+  transition: 0.2s;
+}
+
+.cards-type-name-card__btn:hover,
+.cards-type-name-card__btn:active {
+  background-color: #dce4ff;
+}
+
+.cards-type-name-card__btn:hover span,
+.cards-type-name-card__btn:active span {
+  margin-left: 1rem; /* Adjusted for consistency */
+}

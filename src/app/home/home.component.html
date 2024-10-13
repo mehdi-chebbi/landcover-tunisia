@@ -1,0 +1,179 @@
+<nav id="uniqueNavBar">
+  <img src="assets/logo-h.png" class="logo" alt="Logo" /> <!-- Added a class for logo -->
+  <ul class="uniqueNavList">
+    <li class="uniqueNavItem"><a routerLink="/home" class="uniqueNavLink">Home</a></li>
+    <li class="uniqueNavItem"><a routerLink="/cagre-geomorphologie" class="uniqueNavLink">Cagre Geomorphologie</a></li>
+    <li class="uniqueNavItem"><a routerLink="/decision-tree" class="uniqueNavLink">Decision Tree</a></li>
+    <li class="uniqueNavItem"><a routerLink="/indices" class="uniqueNavLink">Indices</a></li>
+    <li class="uniqueNavItem"><a routerLink="/random-forest" class="uniqueNavLink">Random Forest</a></li>
+    <li class="uniqueNavItem"><a routerLink="/svm" class="uniqueNavLink">SVM</a></li>
+  </ul>
+</nav>
+
+<div >
+
+  <figure class="slider">
+    <div class="scrolling-text"#galleryTitle>
+
+      <span class="text"></span><span class="cursor blink">_</span>
+
+      <div style="display: flex; justify-content: flex-start; align-items: center; padding: 10px;">
+        <div class="feature-item" style="margin-right: 150px; margin-top: 25px; text-align: center; padding: 10px;">
+          <img src="assets/mountain.png" alt="10M Resolution Icon" style="width: 35px; height: 35px; margin-right: 8px; filter: brightness(0) invert(1);">
+          30M resolution
+        </div>
+        <div class="feature-item" style="margin-right: 150px; margin-top: 25px; text-align: center; padding: 10px;">
+          <img src="assets/ia.png" alt="AI Powered Icon" style="width: 35px; height: 35px; margin-right: 8px; filter: brightness(0) invert(1);">
+          AI Powered
+        </div>
+        <div class="feature-item" style="margin-right: 10px; margin-top: 25px; text-align: center; padding: 10px;">
+          <img src="assets/time.png" alt="Near Realtime Icon" style="width: 35px; height: 35px; margin-right: 8px; filter: brightness(0) invert(1);">
+          Near Realtime
+        </div>
+      </div>
+      <div class="button-container"style="margin-top: 60px">
+        <button  (click)="scrollDowncarte()" class="explore-btn-name-explore">Visualizer les cartes</button>
+        <!-- app.component.html -->
+        <button (click)="scrollDown()" class="explore-btn-name-discover">Explorer les classes</button>
+
+
+        <button class="explore-btn-name-read">READ THE PAPER</button>
+      </div>
+
+    </div>
+
+
+    <figure>
+      <img src="assets/land_crops.jpg" alt="Land Crops">
+    </figure>
+    <figure>
+      <img src="assets/land_shrub.jpg" alt="Land Shrub">
+    </figure>
+    <figure>
+      <img src="assets/land_area.jpg" alt="Land Area">
+    </figure>
+
+    <figure>
+      <img src="assets/land_grass.jpg" alt="Land Grass">
+    </figure>
+    <figure>
+      <img src="assets/land_ground.jpg" alt="Land Ground">
+    </figure>
+
+  </figure>
+</div>
+<div #target></div>
+<div class="bubble-container">
+  <h2>13 Land Use and Cover Types</h2>
+  <div class="bubble-land-use">
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #FF6347;"></div>
+      <div class="bubble-label">cultures ete</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #FFD700;"></div>
+      <div class="bubble-label">culture perenne</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #32CD32;"></div>
+      <div class="bubble-label">culture pluviale</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #F7F432;"></div>
+      <div class="bubble-label">etendue dunaire</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #144f14;"></div>
+      <div class="bubble-label">foret</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #E61E17;"></div>
+      <div class="bubble-label">habitat</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #228B22;"></div>
+      <div class="bubble-label">jachere</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #D2691E;"></div>
+      <div class="bubble-label">maquis</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #B8860B;"></div>
+      <div class="bubble-label">oliviers</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #4682B4;"></div>
+      <div class="bubble-label">eau permanent</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #87CEEB;"></div>
+      <div class="bubble-label">eau temporaire</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #C0C0C0;"></div>
+      <div class="bubble-label">sol nu</div>
+    </div>
+    <div class="bubble-land-type">
+      <div class="bubble-color-circle" style="background-color: #FFE4B5;"></div>
+      <div class="bubble-label">steppe</div>
+    </div>
+  </div>
+</div>
+<div></div>
+
+<div style="margin-top: 100px ; margin-left: 120px">
+  <div class="cards-type-name-grid">
+    <div class="cards-type-name-card">
+      <img class="cards-type-name-card__img" src="assets/svm.jpg" alt="SVM"/>
+      <div class="cards-type-name-card__content">
+        <h1 class="cards-type-name-card__header">SVM</h1>
+        <div class="cards-type-name-card__text-wrapper">
+          <p class="cards-type-name-card__text">Explorez les capacités des <strong>Machines à Vecteurs de Support (SVM)</strong> dans les tâches de classification.</p>
+        </div>
+        <button class="cards-type-name-card__btn" [routerLink]="['/svm']">Explorer <span>&rarr;</span></button>
+      </div>
+    </div>
+    <div class="cards-type-name-card">
+      <img class="cards-type-name-card__img" src="assets/tree.png" alt="Arbre de Décision"/>
+      <div class="cards-type-name-card__content">
+        <h1 class="cards-type-name-card__header">Arbre de Décision</h1>
+        <div class="cards-type-name-card__text-wrapper">
+          <p class="cards-type-name-card__text">Découvrez la simplicité et la puissance des <strong>Arbres de Décision</strong> dans l'analyse des données.</p>
+        </div>
+        <button class="cards-type-name-card__btn" [routerLink]="['/decision-tree']">Explorer <span>&rarr;</span></button>
+      </div>
+    </div>
+    <div class="cards-type-name-card">
+      <img class="cards-type-name-card__img" src="assets/random-forest-algorithm-color-icon-vector-50297686.jpg" alt="Forêt Aléatoire"/>
+      <div class="cards-type-name-card__content">
+        <h1 class="cards-type-name-card__header">Forêt Aléatoire</h1>
+        <div class="cards-type-name-card__text-wrapper">
+          <p class="cards-type-name-card__text">Découvrez la force des algorithmes de <strong>Forêt Aléatoire</strong> pour une précision améliorée.</p>
+        </div>
+        <button class="cards-type-name-card__btn" [routerLink]="['/random-forest']">Explorer <span>&rarr;</span></button>
+      </div>
+    </div>
+    <div class="cards-type-name-card">
+      <img class="cards-type-name-card__img" src="assets/index.png" alt="Indices"/>
+      <div class="cards-type-name-card__content">
+        <h1 class="cards-type-name-card__header">Indices</h1>
+        <div class="cards-type-name-card__text-wrapper">
+          <p class="cards-type-name-card__text">Analysez l'importance des <strong>indices</strong> dans l'interprétation des données.</p>
+        </div>
+        <button class="cards-type-name-card__btn" [routerLink]="['/indices']">Explorer <span>&rarr;</span></button>
+      </div>
+    </div>
+    <div class="cards-type-name-card">
+      <img class="cards-type-name-card__img" src="assets/cagre.png" alt="Cagre Géomorphologie"/>
+      <div class="cards-type-name-card__content">
+        <h1 class="cards-type-name-card__header">Cagre Géomorphologie</h1>
+        <div class="cards-type-name-card__text-wrapper">
+          <p class="cards-type-name-card__text">Plongez dans le monde fascinant des études de <strong>Cagre Géomorphologie</strong>.</p>
+        </div>
+        <button  class="cards-type-name-card__btn" [routerLink]="['/cagre-geomorphologie']">Explorer <span>&rarr;</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div #targetcarte></div>
