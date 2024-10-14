@@ -6,6 +6,7 @@ import {RandomForestComponent} from "./random-forest/random-forest.component";
 import {IndicesComponent} from "./indices/indices.component";
 import {DecisionTreeComponent} from "./decision-tree/decision-tree.component";
 import {CagreGeomorphologieComponent} from "./cagre-geomorphologie/cagre-geomorphologie.component";
+import {OumaComponent} from "./ouma/ouma.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'indices', component: IndicesComponent },
   { path: 'random-forest', component: RandomForestComponent },
   { path: 'svm', component: SvmComponent },
+  { path: 'ouma', component: OumaComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' } // Redirect to home on empty path
 ];
 @NgModule({
